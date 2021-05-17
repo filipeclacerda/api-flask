@@ -1,6 +1,6 @@
 from flask import Flask, request
-app = Flask("api")
+application = Flask(__name__)
 
-@app.route("/")
+@application.route("/")
 def olaMundo():
     return {"ola": "mundo"}
