@@ -7,5 +7,5 @@ def olaMundo():
     return {"ola": "mundo"}
 
 @application.route("/teste")
-def olaMundo():
+def olaMundo2():
     return {"ola": "mundo2"}
