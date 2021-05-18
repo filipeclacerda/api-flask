@@ -5,3 +5,7 @@ app = application
 @application.route("/")
 def olaMundo():
     return {"ola": "mundo"}
+
+@application.route("/teste")
+def olaMundo():
+    return {"ola": "mundo2"}
