@@ -1,4 +1,5 @@
-from flask import Flask, request
+from flask import Flask
+import requests
 application = Flask(__name__)
 app = application
 
@@ -8,4 +9,5 @@ def olaMundo():
 
 @application.route("/teste")
 def olaMundo2():
-    return {"ola": "mundo2"}
+    response = requests.get("http://flask-env.eba-rt5342sp.us-east-2.elasticbeanstalk.com")
+    return {"resposta": response}
