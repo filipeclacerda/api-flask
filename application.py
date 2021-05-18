@@ -9,5 +9,5 @@ def olaMundo():
 
 @application.route("/teste")
 def olaMundo2():
-    response = requests.get("http://flask-env.eba-rt5342sp.us-east-2.elasticbeanstalk.com")
+    response = requests.get("https://api.github.com/users/filipeclacerda/repos")
     return {"resposta": response}
